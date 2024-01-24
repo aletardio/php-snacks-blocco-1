@@ -30,11 +30,11 @@
                         </div>
                         <div class="col-4 py-4">
                             <label for="control-label" class="form-label">Inserisci la tua mail</label>
-                            <input type="text" class="form-control" name="email" id="email" required>
+                            <input type="email" class="form-control" name="email" id="email" required>
                         </div>
                         <div class="col-4 py-4">
                             <label for="control-label" class="form-label">Inserisci la tua età</label>
-                            <input type="text" class="form-control" name="age" id="age" required>
+                            <input type="number" class="form-control" name="age" id="age" required>
                         </div>
                         <div class="col-12 py-1">
                             <button type="submit" class="btn btn-sm btn-success">Invia</button>
