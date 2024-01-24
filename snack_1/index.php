@@ -8,7 +8,7 @@
         ],
         [
             'sq_home' => 'Reyer Venezia',
-            'sq_away' => 'Nutribullet Trevios',
+            'sq_away' => 'Nutribullet Treviso',
             'score_home' => 102,
             'score_away' => 89,
         ],
@@ -27,16 +27,20 @@
     ]
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Snack 1</title>
 </head>
-<body>
-    
+<body class='bg-secondary'>
+    <h1 class='text-light text-center py-5'> Risultati del weekend</h1>
+    <h2 class='text-light text-center py-2'>
+        <?php foreach ($array_matches as $match) { ?>
+                <?php echo $match ['sq_home'].' - '.$match['sq_away'].' | '.$match['score_home'].'-'.$match['score_away'].'<br>'; ?>
+        <?php } ?>
+    </h2>
 </body>
 </html>
