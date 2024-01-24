@@ -47,6 +47,17 @@
     <title>Snack 3</title>
 </head>
 <body>
-    
+        <?php 
+            foreach ($posts as $post => $postDate) {
+                echo "<h2>$post</h2>";
+
+                foreach ($postDate as $postInfo) {
+                    echo "<h3>{$postInfo['title']}</h3>";
+                    echo "<p>Autore: {$postInfo['author']}</p>";
+                    echo "<p>{$postInfo['text']}</p>";
+                    echo "<hr>";
+                }
+            }
+        ?>
 </body>
 </html>
