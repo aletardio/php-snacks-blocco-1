@@ -1,5 +1,6 @@
 <?php 
     $resultClass = '';
+    $resultMessage = '';
     if (isset($_GET['name']) && isset($_GET['email']) && isset($_GET['age'])) {
 
         $name = $_GET['name'];
